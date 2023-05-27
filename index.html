@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website: Aniket Bindhani</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0bc1bbe512.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="website logo" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Web Developer</p>
+                <h1>Hi, I'm <span>A</span>niket <span>B</span>indhani</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Page Code -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-page-image.png" alt="about page image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm Aniket Bindhani, a Computer Science undergraduate with a passion for full-stack web
+                        development. From conceptualization to implementation, I specialize in designing and developing
+                        dynamic websites and blogs that engage users and deliver an exceptional user experience.
+                        <br>
+                        <br>
+                        I have a solid foundation in HTML, CSS, JavaScript and React. I also have experience in working
+                        with back-end technologies like Node.js and databases like MongoDB.
+                        <br>
+                        <br>
+                        I am eager to collaborate and work alongside experienced professionals to expand my knowledge
+                        and skills. I am actively seeking new opportunities to contribute to meaningful projects.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <!-- <p class="tab-links">Experience</p> -->
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/ios apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - Current</span><br>B-tech in Computer Science at KIIT University Bhubaneswar
+                            </li>
+                            <li><span>2020</span><br>12th from ODM Public School Bhubaneswar</li>
+                            <li><span>2018</span><br>10th from DAV Public School Bhubaneswar</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Website Design</h2>
+                    <p>We specialize in end-to-end website design solutions for local businesses, aiming to maximize sales and boost their online presence.</p>
+                    <a href="#contact">Contact Us</a>
+                </div>
+
+                <div>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <h2>Wordpress Website Setup</h2>
+                    <p>If you're facing difficulties setting up your WordPress website, we offer expert assistance to help you get it up and running smoothly.</p>
+                    <a href="#contact">Contact Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.jpeg" alt="work 1">
+                    <div class="layer">
+                        <h3>NewsFusion</h3>
+                        <p>Get your daily dose of news for free</p>
+                        <a href="https://youtu.be/HjRZWtGhyu8" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.jpeg" alt="work 2">
+                    <div class="layer">
+                        <h3>Text Metrics</h3>
+                        <p>The website allows users to input text and instantly view the word count and character count
+                            of their input, convert the entire text to uppercase or lowercase and more features</p>
+                        <a href="https://anik-bin.github.io/textutils/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.jpeg" alt="work 3">
+                    <div class="layer">
+                        <h3>Memory Game</h3>
+                        <p>A simple memory game in which you have to select two tiles having the same image</p>
+                        <a href="https://anik-bin.github.io/Memory-Game/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="btn">See More</a> -->
+        </div>
+    </div>
+
+    <!-- contact -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> <a
+                            href="mailto:aniketbindhani@gmail.com">aniketbindhani@gmail.com</a></p>
+                    <!-- <p><i class="fa-solid fa-phone"></i> 0123456789</p> -->
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/aniketbindhani/" target="_blank"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/aniketbindhani" target="_blank"><i
+                                class="fa-brands fa-twitter"></i></a>
+                    </div>
+                    <a href="images/Resume.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Enter your Message"></textarea>
+                        <button type="submit" class="btn-form">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2023 aniketbindhani.com</p>
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbz4AjFN7XfBQtGTwjWnCZ1WsFsPD9u1hoiGKkInpv5gJM8HJzQCEbiyl30HgwCRItN8xg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
